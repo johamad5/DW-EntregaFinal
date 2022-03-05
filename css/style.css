@@ -134,3 +134,20 @@ video {
     color: #ffffff;
   }
 }
+
+/* Avisos y novedades */
+.TitleNew {
+  font-family: "Patrick Hand", sans-serif;
+  font-size: 36px;
+  color: #008bc4;
+  text-shadow: 3px 3px 4px #c6c6c6;
+}
+
+.card-body .DateBox {
+  background: linear-gradient(#008bc4, #69c5d7);
+  color: #ffffff;
+}
+
+.card-body .InformationButton:hover {
+  color: #ffffff;
+}
