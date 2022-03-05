@@ -14,18 +14,77 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Patrick+Hand&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="../img/minilogo.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="../img/MiniLogo.png">
+    <link rel="stylesheet" href="../css/style.css">
     <title>ROLANDO | Contacto.</title>
 </head>
 
 <body>
 
-    <header></header>
+    <header>
+        <!--Navbar toggler -->
+        <nav class="navbar navbar-expand-lg navbar-light HeaderBackground">
+            <div class="container">
+                <div>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <a class="navbar-brand" href="../index.html"><img src="../img/LogoEmpresa.svg" /></a>
+                        <div class="HeaderText text-center d-none d-xl-block">
+                            <h1 id="start" class="HeaderTitleOne">Rolando | Ice cream rolls</h1>
+                            <h3 class="HeaderTitleTwo">Único como vos.</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <a class="nav-link me-4" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link me-4" href="./rolando.html">ROLANDO</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link me-4" href="./avisos.html">AVISOS</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link me-4" href="./servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="pageact nav-link me-4" aria-current="page" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <main></main>
 
-    <footer></footer>
+    <footer class="FooterBackground pt-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center text-center ShadowButton">
+                <div class="col-sm-12 col-xl-4">
+                    <a href="mailto:hola@rolandorolls.com" target="_blanck"><i class="icon bi bi-envelope"></i></a>
+                    <a href="https://wa.me/59896388739?text=Hola!%20Me%20gustaría%20tener%20más%20información%20sobre ."
+                        target="_blanck"><i class=" icon bi bi-whatsapp  ms-5"></i></a>
+                    <a href="https://www.instagram.com/rolandorolls/?hl=es-la" target="_blanck"><i
+                            class=" icon bi bi-instagram  ms-5"></i></a>
+                    <a href="https://www.facebook.com/soyrolandorolls" target="_blanck"><i
+                            class=" icon bi bi-facebook  ms-5"></i></a>
+                </div>
+                <div class="col-sm-12 col-xl-4 d-none d-lg-block text-center my-2"><img src="../img/LogoEmpresa.svg"
+                        width="90px" height="90px">
+                </div>
+                <div class="col-sm-12 col-xl-4 text-center ShadowButton">
+                    <a href="#start"><i class="icon bi bi-arrow-up-circle-fill"></i></a>
+                    <p>Todos los derechos reservados. <br> 2022.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

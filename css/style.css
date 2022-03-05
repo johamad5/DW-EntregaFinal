@@ -19,3 +19,80 @@ Patrick Hand - h1
 #69C5D7 - azul claro
 
 */
+
+/* Gener reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* Header & Footer style */
+
+header {
+  font-size: 14px;
+}
+
+header .HeaderBackground {
+  background: linear-gradient(#c6c6c6, #ffffff);
+}
+
+header .HeaderBackground .HeaderText {
+  font-family: "Aleo", serif;
+}
+
+header .HeaderBackground .HeaderText .HeaderTitleOne {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+header .HeaderBackground .HeaderText .HeaderTitleTwo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-item .pageact {
+  font-size: large;
+  font-weight: bold;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  text-decoration: overline;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #69c5d7;
+}
+
+footer {
+  font-size: 14px;
+  font-family: "Aleo", serif;
+}
+
+.FooterBackground {
+  background: linear-gradient(#ffffff, #c6c6c6);
+}
+
+.FooterBackground .icon {
+  font-size: 35px;
+  color: #69c5d7;
+}
+
+.ShadowButton a:hover {
+  font-size: 25px;
+  text-shadow: 3px 4px 4px #000000;
+}
+
+.CarouselText {
+  color: #000000;
+  font-family: "Architects Daughter", sans-serif;
+}
