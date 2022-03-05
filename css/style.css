@@ -151,3 +151,8 @@ video {
 .card-body .InformationButton:hover {
   color: #ffffff;
 }
+
+/* Servicios */
+.ServiciosBackground {
+  background-image: url(../img/BackgroundServicios.svg);
+}
