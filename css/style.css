@@ -65,12 +65,14 @@ header .HeaderBackground .HeaderText .HeaderTitleTwo {
 
 .nav-item a {
   text-decoration: none;
+  transition: all 0.5s;
 }
 
 .nav-item a:hover {
   text-decoration: overline;
   font-weight: bold;
   text-shadow: 2px 2px 4px #69c5d7;
+  transform: scale(1, 1.25);
 }
 
 footer {
@@ -150,9 +152,109 @@ video {
 
 .card-body .InformationButton:hover {
   color: #ffffff;
+  transition: all 0.5s;
 }
 
 /* Servicios */
 .ServiciosBackground {
   background-image: url(../img/BackgroundServicios.svg);
+}
+
+/* Animaciones y trancisiones */
+
+.PrincipalTitle {
+  animation-name: title;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+}
+
+@keyframes title {
+  0% {
+    transform: translatey(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatexy(0px);
+    opacity: 1;
+  }
+}
+
+.TitleNew {
+  animation-name: mov;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+@keyframes mov {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.FormButtonDanger {
+  color: red;
+  border: 3px solid red;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.FormButtonDanger:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  z-index: -1;
+  transform: translatex(-100%);
+  transition: all 0.5s;
+}
+
+.FormButtonDanger:hover:before {
+  transform: translatex(0%);
+}
+
+.FormButtonDanger:hover {
+  color: white;
+}
+
+.FormButtonInfo {
+  color: #69c5d7;
+  border: 3px solid #69c5d7;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.FormButtonInfo:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #69c5d7;
+  z-index: -1;
+  transform: translatex(-100%);
+  transition: all 0.5s;
+}
+
+.FormButtonInfo:hover:before {
+  transform: translatex(0%);
+}
+
+.FormButtonInfo:hover {
+  color: white;
 }
