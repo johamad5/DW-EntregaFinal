@@ -61,7 +61,117 @@
         </nav>
     </header>
 
-    <main></main>
+    <main class="container">
+        <h2 class="PrincipalTitle text-center">Contacto</h2>
+
+        <div class="w-75 row mx-auto my-3">
+            <div class="col-12 col-sm-8">
+                <p>Nos puedes contactar por cualquier duda que tengas o cotizacion por fiesta/evento a cubrir.
+                </p>
+            </div>
+            <div class="d-none d-sm-block col-4 d-flex justify-content-end"><img src="../img/Phone.svg"
+                    class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="email" id="Email" name="Email" placeholder="hola@gmail.com">
+                        <label for="Email">Email</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="Nombre" name="Nombre" placeholder="Rolando">
+                        <label for="Nombre">Nombre</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="Apellido" name="Apelido" placeholder="Rolls">
+                        <label for="Apellido">Apellido</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="Numero" name="Telefono" placeholder="099123456">
+                        <label for="Numero">Celular</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="fecha">Fecha</label>
+                        <input class="form-control" type="date" id="fecha">
+                        <div class="form-text">Fecha en la que se realizará el evento.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="hora">Hora</label>
+                        <input class="form-control" type="time" id="hora" name="Hora">
+                        <div class="form-text">Horario en que comienza el servicio.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <p class="form-label">Tipo de evento a festejar:</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Evento" id="XV">
+                            <label class="form-check-label" for="XV">
+                                Cumple XV.
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Evento" id="CumpleInfantil" checked>
+                            <label class="form-check-label" for="CumpleInfantil">
+                                Cumpleaños infantil.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Evento" id="EventoEmpresarial">
+                            <label class="form-check-label" for="EventoEmpresarial">
+                                Evento empresarial.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Evento" id="Casamiento" checked>
+                            <label class="form-check-label" for="Casamiento">
+                                Casamiento.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Evento" id="Otro" checked>
+                            <label class="form-check-label" for="Otro">Otro.</label>
+                            <textarea class="form-control" id="Otro" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="Ubicacion">Dirección</label>
+                        <input class="form-control" type="text" id="Ubicacion" name="Dirección">
+                        <div class="form-text">Para cotizar el traslado necesitamos saber en qué lugar es el evento.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Publico">Cantidad de invitados</label>
+                        <input class="form-control" type="text" id="Publico" name="Invitados">
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="row ">
+                            <div class="col"><button type="submit" class="btn btn-outline-info">Enviar</button></div>
+                            <div class="col"><button type="reset" class="btn btn-outline-danger">Borrar</button></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 offset-md-2 col-md-4 d-flex align-items-end mt-5">
+                <img src="../img/PersonWithPlant.svg" class="img-fluid">
+            </div>
+
+        </div>
+
+    </main>
 
     <footer class="FooterBackground pt-5 mt-5">
         <div class="container">
