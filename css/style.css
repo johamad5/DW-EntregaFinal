@@ -38,10 +38,11 @@ html {
 
 header {
   font-size: 14px;
+  position: relative;
 }
 
 header .HeaderBackground {
-  background: linear-gradient(#c6c6c6, #ffffff);
+  background: linear-gradient(#ffffff, #c6c6c6);
 }
 
 header .HeaderBackground .HeaderText {
@@ -56,6 +57,12 @@ header .HeaderBackground .HeaderText .HeaderTitleOne {
 header .HeaderBackground .HeaderText .HeaderTitleTwo {
   font-size: 18px;
   font-weight: 700;
+}
+
+header .HeaderWave {
+  position: absolute;
+  top: 115px;
+  z-index: 3;
 }
 
 .nav-item .pageact {
@@ -81,7 +88,7 @@ footer {
 }
 
 .FooterBackground {
-  background: linear-gradient(#ffffff, #c6c6c6);
+  background: linear-gradient(#c6c6c6, #ffffff);
 }
 
 .FooterBackground .icon {
