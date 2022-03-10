@@ -138,6 +138,10 @@ video {
   height: 60vh;
 }
 
+/* .TableTheOptions {
+  width: 60%;
+} */
+
 @media (max-width: 767.98px) {
   .RolandoTitle {
     color: #ffffff;
