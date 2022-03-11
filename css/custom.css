@@ -207,7 +207,6 @@ header .HeaderBackground .nav-item a:hover {
 }
 header .HeaderWave {
   position: absolute;
-  top: 115px;
   z-index: 3;
 }
 
