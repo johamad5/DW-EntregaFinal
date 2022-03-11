@@ -1,0 +1,15 @@
+.RolandoBackground {
+  position: absolute;
+  top: 70px;
+  z-index: -1;
+}
+
+.HistoryRolando {
+  height: 80vh;
+  background-color: $SecundaryColor;
+  color: $ComplementaryColor1;
+}
+
+video {
+  height: 60vh;
+}

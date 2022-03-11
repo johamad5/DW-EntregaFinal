@@ -15,7 +15,7 @@ html {
 }
 
 /* Header & Footer style */
-
+/* 
 header {
   font-size: 14px;
   position: relative;
@@ -72,7 +72,7 @@ footer {
 .ShadowButton a:hover {
   font-size: 25px;
   text-shadow: 3px 4px 4px #000000;
-}
+} */
 
 /* Index */
 .CarouselText {

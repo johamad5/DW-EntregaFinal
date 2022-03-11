@@ -1,0 +1,18 @@
+.card-body {
+  .DateBox {
+    background: linear-gradient($SecundaryColor, $MainColor);
+    color: $ComplementaryColor1;
+  }
+
+  .InformationButton:hover {
+    color: $ComplementaryColor1;
+    transition: all 0.5s;
+  }
+}
+
+.TitleNew {
+  font-family: $DetailsFont;
+  font-size: 36px;
+  color: $SecundaryColor;
+  text-shadow: 3px 3px 4px $ComplementaryColor2;
+}

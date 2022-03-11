@@ -1,0 +1,37 @@
+header {
+  font-size: 14px;
+  position: relative;
+
+  .HeaderBackground {
+    @include BackgroundGradient($ComplementaryColor1, $ComplementaryColor2);
+
+    .HeaderText {
+      font-family: $MainFont;
+
+      .HeaderTitleOne {
+        font-size: 24px;
+      }
+
+      .HeaderTitleTwo {
+        font-size: 18px;
+      }
+    }
+
+    .nav-item a {
+      text-decoration: none;
+      transition: all 0.5s;
+      &:hover {
+        text-decoration: overline;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px $SecundaryColor;
+        transform: scale(1, 1.25);
+      }
+    }
+  }
+
+  .HeaderWave {
+    position: absolute;
+    top: 115px;
+    z-index: 3;
+  }
+}

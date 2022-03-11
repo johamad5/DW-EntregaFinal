@@ -1,0 +1,15 @@
+.FormButtonDanger {
+  color: red;
+  border: 3px solid red;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.FormButtonInfo {
+  color: $MainColor;
+  border: 3px solid $MainColor;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $BasicFont;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.PrincipalTitle {
+  font-family: $DetailsFont;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  font-size: $size;
+  color: $SecundaryColor;
+  text-shadow: 3px 3px 4px $ComplementaryColor2;
+  position: relative;
+  z-index: 1;
+}
