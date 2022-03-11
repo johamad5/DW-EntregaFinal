@@ -51,23 +51,16 @@ header .HeaderBackground .HeaderText {
 
 header .HeaderBackground .HeaderText .HeaderTitleOne {
   font-size: 24px;
-  font-weight: 700;
 }
 
 header .HeaderBackground .HeaderText .HeaderTitleTwo {
   font-size: 18px;
-  font-weight: 700;
 }
 
 header .HeaderWave {
   position: absolute;
   top: 115px;
   z-index: 3;
-}
-
-.nav-item .pageact {
-  font-size: large;
-  font-weight: bold;
 }
 
 .nav-item a {
@@ -119,7 +112,6 @@ footer {
   margin-top: 120px;
   margin-bottom: 100px;
   font-size: 48px;
-  font-weight: bold;
   color: #008bc4;
   text-shadow: 3px 3px 4px #c6c6c6;
   position: relative;
@@ -130,22 +122,10 @@ footer {
   height: 80vh;
   background-color: #008bc4;
   color: #ffffff;
-  display: flex;
-  width: auto;
 }
 
 video {
   height: 60vh;
-}
-
-/* .TableTheOptions {
-  width: 60%;
-} */
-
-@media (max-width: 767.98px) {
-  .RolandoTitle {
-    color: #ffffff;
-  }
 }
 
 /* Avisos y novedades */
@@ -171,8 +151,14 @@ video {
   background-image: url(../img/BackgroundServicios.svg);
 }
 
-/* Animaciones y trancisiones */
+/* Media */
+@media (max-width: 767.98px) {
+  .RolandoTitle {
+    color: #ffffff;
+  }
+}
 
+/* Animaciones y trancisiones */
 .PrincipalTitle {
   animation-name: title;
   animation-iteration-count: 1;
