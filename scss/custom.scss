@@ -1,4 +1,24 @@
-/* css puro */
+/* ESTILOS GENERALES.
+
+    FONT-FAMILY
+Aleo - titulo, nav
+Roboto - texto main, footer
+Patrick Hand - h1
+
+    FONT-SIZE
+48 px - h1
+36 px - nombre, nuevo!
+24 px - nombre prod. nuevo.
+18 px - texto main, sub-titulo
+14 px - footer, nav
+
+    COLORS
+#E6E6E6 - gris claro
+#FFFFFF - blanco
+#008BC4 - azul oscuro
+#69C5D7 - azul claro
+
+*/
 
 /* Gener reset */
 * {
@@ -235,3 +255,5 @@ video {
 .FormButtonInfo:hover {
   color: white;
 }
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
