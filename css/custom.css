@@ -62,42 +62,63 @@ html {
   }
 }
 
-.FormButtonDanger:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: red;
-  z-index: -1;
-  transform: translatex(-100%);
-  transition: all 1s;
-}
-.FormButtonDanger:hover:before {
-  transform: translatex(0%);
+.FormButtonDanger {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: red;
+  border: 3px solid red;
+  padding: 8px 16px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid red;
 }
 .FormButtonDanger:hover {
+  background-color: red;
   color: #ffffff;
+}
+.FormButtonDanger:before {
+  content: "";
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  transform: translatex(-100%) rotate(45deg);
+  transition: all 0.5s;
+}
+.FormButtonDanger:hover:before {
+  transform: translatex(100%) rotate(45deg);
 }
 
-.FormButtonInfo:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #69c5d7;
-  z-index: -1;
-  transform: translatex(-100%);
-  transition: all 1s;
-}
-.FormButtonInfo:hover:before {
-  transform: translatex(0%);
+.FormButtonInfo {
+  text-decoration: none;
+  color: #69c5d7;
+  background-color: #ffffff;
+  border: 3px solid #69c5d7;
+  padding: 8px 16px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 .FormButtonInfo:hover {
+  background-color: #69c5d7;
   color: #ffffff;
+}
+.FormButtonInfo:before {
+  content: "";
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  transform: translatex(-100%) rotate(45deg);
+  transition: all 0.5s;
+}
+.FormButtonInfo:hover:before {
+  transform: translatex(100%) rotate(45deg);
 }
 
 .FormButtonDanger {

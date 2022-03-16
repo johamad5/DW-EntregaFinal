@@ -38,47 +38,66 @@
 }
 
 .FormButtonDanger {
+  text-decoration: none;
+  background-color: $ComplementaryColor1;
+  color: red;
+  border: 3px solid red;
+  padding: 8px 16px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid red;
+
+  &:hover {
+    background-color: red;
+    color: $ComplementaryColor1;
+  }
+
   &:before {
     content: "";
-    position: absolute;
-    left: 0;
+    background-color: $ComplementaryColor1;
     top: 0;
-    height: 100%;
+    left: 0;
     width: 100%;
-    background-color: red;
-    z-index: -1;
-    transform: translatex(-100%);
-    transition: all 1s;
+    height: 10px;
+    position: absolute;
+    transform: translatex(-100%) rotate(45deg);
+    transition: all 0.5s;
   }
 
   &:hover:before {
-    transform: translatex(0%);
-  }
-
-  &:hover {
-    color: $ComplementaryColor1;
+    transform: translatex(100%) rotate(45deg);
   }
 }
 
 .FormButtonInfo {
+  text-decoration: none;
+  color: $MainColor;
+  background-color: $ComplementaryColor1;
+  border: 3px solid $MainColor;
+  padding: 8px 16px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background-color: $MainColor;
+    color: $ComplementaryColor1;
+  }
+
   &:before {
     content: "";
-    position: absolute;
-    left: 0;
+    background-color: $ComplementaryColor1;
     top: 0;
-    height: 100%;
+    left: 0;
     width: 100%;
-    background-color: $MainColor;
-    z-index: -1;
-    transform: translatex(-100%);
-    transition: all 1s;
+    height: 10px;
+    position: absolute;
+    transform: translatex(-100%) rotate(45deg);
+    transition: all 0.5s;
   }
 
   &:hover:before {
-    transform: translatex(0%);
-  }
-
-  &:hover {
-    color: $ComplementaryColor1;
+    transform: translatex(100%) rotate(45deg);
   }
 }
