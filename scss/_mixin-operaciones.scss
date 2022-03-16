@@ -2,6 +2,3 @@
 @mixin BackgroundGradient($ColorTop, $ColorBottom) {
   background: linear-gradient($ColorTop, $ColorBottom);
 }
-
-// Para aplicar fuentes utilizando operaciones
-$size: 48px;

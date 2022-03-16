@@ -16,8 +16,6 @@ html {
   margin-top: 120px;
   margin-bottom: 100px;
   font-size: $size;
-  color: $SecundaryColor;
+  color: $MainColor;
   text-shadow: 3px 3px 4px $ComplementaryColor2;
-  position: relative;
-  z-index: 1;
 }

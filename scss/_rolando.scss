@@ -1,11 +1,28 @@
 .RolandoBackground {
   position: absolute;
-  top: 70px;
+  top: 80px;
   z-index: -1;
+}
+.RolandoTitle {
+  font-family: $DetailsFont;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  font-size: $size;
+  color: $MainColor;
+  text-shadow: 3px 3px 4px $ComplementaryColor2;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 767.98px) {
+    color: $ComplementaryColor1;
+  }
+
+  @media (max-width: 405px) {
+    font-size: ($size / 2) +4;
+  }
 }
 
 .HistoryRolando {
-  height: 80vh;
   background-color: $SecundaryColor;
   color: $ComplementaryColor1;
 }

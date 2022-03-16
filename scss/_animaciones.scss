@@ -1,12 +1,14 @@
-.PrincipalTitle {
+.PrincipalTitle,
+.RolandoTitle {
   animation-name: title;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 0.5s;
   animation-delay: 0s;
+
   @keyframes title {
     0% {
-      transform: translatey(-50px);
+      transform: translatey(-80px);
       opacity: 0;
     }
     100% {
