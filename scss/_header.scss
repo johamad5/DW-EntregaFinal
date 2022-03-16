@@ -5,6 +5,15 @@ header {
   .HeaderBackground {
     @include BackgroundGradient($ComplementaryColor1, $ComplementaryColor2);
 
+    .CompanyLogo {
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.2, 1.2);
+        filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.7));
+      }
+    }
+
     .HeaderText {
       font-family: $MainFont;
 

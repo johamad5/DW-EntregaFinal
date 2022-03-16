@@ -167,7 +167,7 @@ html {
 }
 @media (max-width: 405px) {
   .RolandoTitle {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
@@ -207,6 +207,13 @@ header {
 }
 header .HeaderBackground {
   background: linear-gradient(#ffffff, #c6c6c6);
+}
+header .HeaderBackground .CompanyLogo {
+  transition: 0.5s;
+}
+header .HeaderBackground .CompanyLogo:hover {
+  transform: scale(1.2, 1.2);
+  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.7));
 }
 header .HeaderBackground .HeaderText {
   font-family: "Aleo", serif;
