@@ -1,4 +1,4 @@
 // Mixin para header y footer
-@mixin BackgroundGradient($ColorTop, $ColorBottom) {
-  background: linear-gradient($ColorTop, $ColorBottom);
+@mixin BackgroundGradient($colorTop, $colorBottom) {
+  background: linear-gradient($colorTop, $colorBottom);
 }

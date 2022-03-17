@@ -15,7 +15,7 @@ html {
   font-size: 18px;
 }
 
-.PrincipalTitle {
+.principalTitle {
   font-family: "Patrick Hand", cursive;
   margin-top: 120px;
   margin-bottom: 100px;
@@ -24,8 +24,8 @@ html {
   text-shadow: 3px 3px 4px #c6c6c6;
 }
 
-.PrincipalTitle,
-.RolandoTitle {
+.principalTitle,
+.rolandoTitle {
   animation-name: title;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -43,7 +43,7 @@ html {
   }
 }
 
-.TitleNew {
+.titleNew {
   animation-name: mov;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
@@ -62,7 +62,64 @@ html {
   }
 }
 
-.FormButtonDanger {
+.formButtonDanger:hover {
+  background-color: red;
+  color: #ffffff;
+}
+.formButtonDanger:before {
+  content: "";
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  transform: translatex(-100%) rotate(45deg);
+  transition: all 0.5s;
+}
+.formButtonDanger:hover:before {
+  transform: translatex(100%) rotate(45deg);
+}
+
+.formButtonInfo:hover {
+  background-color: #69c5d7;
+  color: #ffffff;
+}
+.formButtonInfo:before {
+  content: "";
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  transform: translatex(-100%) rotate(45deg);
+  transition: all 0.5s;
+}
+.formButtonInfo:hover:before {
+  transform: translatex(100%) rotate(45deg);
+}
+
+.carouselTextMov .titleNew {
+  animation-name: carouselTextMov;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+@keyframes mov {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  70% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.formButtonDanger {
   text-decoration: none;
   background-color: #ffffff;
   color: red;
@@ -73,26 +130,8 @@ html {
   overflow: hidden;
   border: 1px solid red;
 }
-.FormButtonDanger:hover {
-  background-color: red;
-  color: #ffffff;
-}
-.FormButtonDanger:before {
-  content: "";
-  background-color: #ffffff;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  position: absolute;
-  transform: translatex(-100%) rotate(45deg);
-  transition: all 0.5s;
-}
-.FormButtonDanger:hover:before {
-  transform: translatex(100%) rotate(45deg);
-}
 
-.FormButtonInfo {
+.formButtonInfo {
   text-decoration: none;
   color: #69c5d7;
   background-color: #ffffff;
@@ -102,63 +141,29 @@ html {
   position: relative;
   overflow: hidden;
 }
-.FormButtonInfo:hover {
-  background-color: #69c5d7;
-  color: #ffffff;
-}
-.FormButtonInfo:before {
-  content: "";
-  background-color: #ffffff;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  position: absolute;
-  transform: translatex(-100%) rotate(45deg);
-  transition: all 0.5s;
-}
-.FormButtonInfo:hover:before {
-  transform: translatex(100%) rotate(45deg);
-}
 
-.FormButtonDanger {
-  color: red;
-  border: 3px solid red;
-  position: relative;
-  transition: all 1s;
-  overflow: hidden;
-}
-
-.FormButtonInfo {
-  color: #69c5d7;
-  border: 3px solid #69c5d7;
-  position: relative;
-  transition: all 1s;
-  overflow: hidden;
-}
-
-.ServiciosBackground {
+.serviciosBackground {
   background-image: url(../img/BackgroundServicios.svg);
 }
-.ServiciosBackground .table ul {
+.serviciosBackground .table ul {
   list-style-type: none;
 }
-.ServiciosBackground .table thead th {
+.serviciosBackground .table thead th {
   color: #ffffff;
   text-shadow: 3px 3px 4px #000000;
   font-size: 24px;
 }
 
-.card-body .DateBox {
+.card-body .dateBox {
   background: linear-gradient(#008bc4, #69c5d7);
   color: #ffffff;
 }
-.card-body .InformationButton:hover {
+.card-body .informationButton:hover {
   color: #ffffff;
   transition: all 0.5s;
 }
 
-.TitleNew {
+.titleNew {
   font-family: "Patrick Hand", cursive;
   font-size: 36px;
   color: #008bc4;
@@ -166,18 +171,18 @@ html {
 }
 
 @media (max-width: 767.98px) {
-  .RolandoBackground {
+  .rolandoBackground {
     position: relative;
     z-index: -1;
   }
-  .RolandoBackground .RolandoIntroduction {
+  .rolandoBackground .rolandoIntroduction {
     position: absolute;
     z-index: 0;
     top: 0px;
   }
 }
 
-.RolandoTitle {
+.rolandoTitle {
   font-family: "Patrick Hand", cursive;
   padding-top: 120px;
   padding-bottom: 100px;
@@ -186,19 +191,19 @@ html {
   text-shadow: 3px 3px 4px #c6c6c6;
 }
 @media (max-width: 767.98px) {
-  .RolandoTitle {
+  .rolandoTitle {
     color: #ffffff;
   }
 }
 @media (max-width: 575.98px) {
-  .RolandoTitle {
+  .rolandoTitle {
     font-size: 30px;
     padding-top: 80px;
     padding-bottom: 60px;
   }
 }
 
-.HistoryRolando {
+.rolandoHistory {
   background-color: #008bc4;
   color: #ffffff;
 }
@@ -207,23 +212,28 @@ video {
   height: 60vh;
 }
 
-.CarouselText {
+.carouselText {
   color: #000000;
   font-family: "Patrick Hand", cursive;
 }
 
+h5 span, .h5 span {
+  color: #69c5d7;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
 footer {
   font-size: 14px;
-  font-family: "Patrick Hand", cursive;
+  font-family: "Aleo", serif;
 }
-footer .FooterBackground {
+footer .footerBackground {
   background: linear-gradient(#c6c6c6, #ffffff);
 }
-footer .FooterBackground .icon {
+footer .footerBackground .icon {
   font-size: 35px;
   color: #69c5d7;
 }
-footer .FooterBackground .ShadowButton a:hover {
+footer .footerBackground .shadowButton a:hover {
   font-size: 25px;
   text-shadow: 3px 4px 4px #000000;
 }
@@ -232,36 +242,36 @@ header {
   font-size: 14px;
   position: relative;
 }
-header .HeaderBackground {
+header .headerBackground {
   background: linear-gradient(#ffffff, #c6c6c6);
 }
-header .HeaderBackground .CompanyLogo {
+header .headerBackground .CompanyLogo {
   transition: 0.5s;
 }
-header .HeaderBackground .CompanyLogo:hover {
+header .headerBackground .CompanyLogo:hover {
   transform: scale(1.2, 1.2);
   filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.7));
 }
-header .HeaderBackground .HeaderText {
+header .headerBackground .headerText {
   font-family: "Aleo", serif;
 }
-header .HeaderBackground .HeaderText .HeaderTitleOne {
+header .headerBackground .headerText .headerTitleOne {
   font-size: 24px;
 }
-header .HeaderBackground .HeaderText .HeaderTitleTwo {
+header .headerBackground .headerText .headerTitleTwo {
   font-size: 18px;
 }
-header .HeaderBackground .nav-item a {
+header .headerBackground .nav-item a {
   text-decoration: none;
   transition: all 0.5s;
 }
-header .HeaderBackground .nav-item a:hover {
+header .headerBackground .nav-item a:hover {
   text-decoration: overline;
   font-weight: bold;
   text-shadow: 2px 2px 4px #008bc4;
   transform: scale(1, 1.25);
 }
-header .HeaderWave {
+header .headerWave {
   position: absolute;
   z-index: 3;
 }

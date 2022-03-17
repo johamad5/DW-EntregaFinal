@@ -2,8 +2,8 @@ header {
   font-size: 14px;
   position: relative;
 
-  .HeaderBackground {
-    @include BackgroundGradient($ComplementaryColor1, $ComplementaryColor2);
+  .headerBackground {
+    @include BackgroundGradient($complementaryColor1, $complementaryColor2);
 
     .CompanyLogo {
       transition: 0.5s;
@@ -14,14 +14,14 @@ header {
       }
     }
 
-    .HeaderText {
-      font-family: $MainFont;
+    .headerText {
+      font-family: $mainFont;
 
-      .HeaderTitleOne {
+      .headerTitleOne {
         font-size: 24px;
       }
 
-      .HeaderTitleTwo {
+      .headerTitleTwo {
         font-size: 18px;
       }
     }
@@ -32,13 +32,13 @@ header {
       &:hover {
         text-decoration: overline;
         font-weight: bold;
-        text-shadow: 2px 2px 4px $SecundaryColor;
+        text-shadow: 2px 2px 4px $secundaryColor;
         transform: scale(1, 1.25);
       }
     }
   }
 
-  .HeaderWave {
+  .headerWave {
     position: absolute;
     z-index: 3;
   }

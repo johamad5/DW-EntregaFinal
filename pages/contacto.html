@@ -21,15 +21,18 @@
 
     <header>
         <!--Navbar toggler -->
-        <nav class="navbar navbar-expand-lg navbar-light HeaderBackground">
+        <nav class="navbar navbar-expand-lg navbar-light headerBackground">
+
             <div class="container">
                 <div>
                     <div class="d-flex justify-content-start align-items-center">
-                        <a class="navbar-brand CompanyLogo" href="../index.html"><img src="../img/LogoEmpresa.svg"
-                                alt="company logo" /></a>
-                        <div id="start" class="HeaderText text-center d-none d-xl-block">
-                            <h1 class="HeaderTitleOne">Rolando | Ice cream rolls</h1>
-                            <h3 class="HeaderTitleTwo">Único como vos.</h3>
+                        <a id="start" class="navbar-brand CompanyLogo" href="../index.html"><img
+                                src="../img/LogoEmpresa.svg" alt="company logo" />
+                        </a>
+
+                        <div class="headerText text-center d-none d-xl-block">
+                            <h1 class="headerTitleOne">Rolando | Ice cream rolls</h1>
+                            <h3 class="headerTitleTwo">Único como vos.</h3>
                         </div>
                     </div>
                 </div>
@@ -63,15 +66,13 @@
             </div>
         </nav>
 
-        <img src="../img/HeaderDecorationWave.svg" alt="decoration header" class="w-100 HeaderWave">
-
+        <img src="../img/HeaderDecorationWave.svg" alt="decoration header" class="w-100 headerWave">
     </header>
 
     <main class="container">
+        <h2 class="principalTitle text-center fw-bold">Contacto</h2>
 
-        <h2 class="PrincipalTitle text-center fw-bold">Contacto</h2>
-
-        <div class="w-75 row mx-auto my-3">
+        <section class="w-75 row mx-auto my-3">
             <div class="col-12 col-sm-8">
                 <p>Nos puedes contactar por cualquier duda que tengas o cotizacion por fiesta/evento a cubrir.
                 </p>
@@ -80,12 +81,13 @@
             <div class="d-none d-sm-block col-4 d-flex justify-content-end"><img src="../img/Phone.svg"
                     class="img-fluid" alt="phone illustration">
             </div>
-        </div>
+        </section>
 
         <!-- Contact form -->
         </div>
         <div class="row">
-            <div class="col-12 col-md-6">
+
+            <section class="col-12 col-md-6">
                 <form>
                     <div class="form-floating mb-3">
                         <input class="form-control" type="email" id="Email" name="Email" placeholder="hola@gmail.com">
@@ -123,30 +125,22 @@
                         <p class="form-label">Tipo de evento a festejar:</p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="Evento" id="XV">
-                            <label class="form-check-label" for="XV">
-                                Cumple XV.
-                            </label>
+                            <label class="form-check-label" for="XV"> Cumple XV. </label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="Evento" id="CumpleInfantil" checked>
-                            <label class="form-check-label" for="CumpleInfantil">
-                                Cumpleaños infantil.
-                            </label>
+                            <label class="form-check-label" for="CumpleInfantil">Cumpleaños infantil. </label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="Evento" id="EventoEmpresarial">
-                            <label class="form-check-label" for="EventoEmpresarial">
-                                Evento empresarial.
-                            </label>
+                            <label class="form-check-label" for="EventoEmpresarial">Evento empresarial.</label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="Evento" id="Casamiento" checked>
-                            <label class="form-check-label" for="Casamiento">
-                                Casamiento.
-                            </label>
+                            <label class="form-check-label" for="Casamiento">Casamiento.</label>
                         </div>
 
                         <div class="form-check">
@@ -170,19 +164,18 @@
 
                     <div class="d-flex justify-content-center">
                         <div class="row ">
-                            <div class="col"><button type="submit" class="FormButtonInfo rounded">Enviar</button></div>
+                            <div class="col"><button type="submit" class="formButtonInfo rounded">Enviar</button></div>
 
-                            <div class="col"><button type="reset" class="FormButtonDanger rounded">Borrar</button></div>
+                            <div class="col"><button type="reset" class="formButtonDanger rounded">Borrar</button></div>
                         </div>
                     </div>
 
                 </form>
-            </div>
+            </section>
 
-            <div class="col-12 offset-md-2 col-md-4 d-flex align-items-end mt-5">
+            <section class="col-12 offset-md-2 col-md-4 d-flex align-items-end mt-5">
                 <img src="../img/PersonWithPlant.svg" class="img-fluid" alt="peron illustration">
-            </div>
-
+            </section>
         </div>
 
     </main>
@@ -190,10 +183,11 @@
     <footer>
         <img src="../img/FooterDecorationWave.svg" alt="decoration footer" class="w-100">
 
-        <div class="FooterBackground">
+        <div class="footerBackground">
             <div class="container">
-                <div class="row justify-content-between align-items-center text-center ShadowButton">
-                    <div class="col-sm-12 col-xl-4">
+                <div class="row justify-content-between align-items-center text-center shadowButton">
+
+                    <section class="col-sm-12 col-xl-4">
                         <a href="mailto:hola@rolandorolls.com" target="_blanck"><i class="icon bi bi-envelope"></i></a>
                         <a href="https://wa.me/59896388739?text=Hola!%20Me%20gustaría%20tener%20más%20información%20sobre ."
                             target="_blanck"><i class=" icon bi bi-whatsapp  ms-5"></i></a>
@@ -201,16 +195,16 @@
                                 class=" icon bi bi-instagram  ms-5"></i></a>
                         <a href="https://www.facebook.com/soyrolandorolls" target="_blanck"><i
                                 class=" icon bi bi-facebook  ms-5"></i></a>
-                    </div>
+                    </section>
 
-                    <div class="col-sm-12 col-xl-4 d-none d-lg-block text-center my-2"><img src="../img/LogoEmpresa.svg"
-                            width="90px" height="90px" alt="company logo">
-                    </div>
+                    <section class="col-sm-12 col-xl-4 d-none d-lg-block text-center my-2"><img
+                            src="../img/LogoEmpresa.svg" width="90px" height="90px" alt="company logo">
+                    </section>
 
-                    <div class="col-sm-12 col-xl-4 text-center ShadowButton">
+                    <section class="col-sm-12 col-xl-4 text-center shadowButton">
                         <a href="#start"><i class="icon bi bi-arrow-up-circle-fill"></i></a>
                         <p>Todos los derechos reservados. <br> 2022.</p>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>

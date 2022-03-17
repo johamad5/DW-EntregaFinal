@@ -1,15 +1,22 @@
-.FormButtonDanger {
+.formButtonDanger {
+  text-decoration: none;
+  background-color: $complementaryColor1;
   color: red;
   border: 3px solid red;
+  padding: 8px 16px;
+  transition: all 0.5s;
   position: relative;
-  transition: all 1s;
   overflow: hidden;
+  border: 1px solid red;
 }
 
-.FormButtonInfo {
-  color: $MainColor;
-  border: 3px solid $MainColor;
+.formButtonInfo {
+  text-decoration: none;
+  color: $mainColor;
+  background-color: $complementaryColor1;
+  border: 3px solid $mainColor;
+  padding: 8px 16px;
+  transition: all 0.3s;
   position: relative;
-  transition: all 1s;
   overflow: hidden;
 }

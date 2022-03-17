@@ -1,5 +1,5 @@
-.PrincipalTitle,
-.RolandoTitle {
+.principalTitle,
+.rolandoTitle {
   animation-name: title;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -18,7 +18,7 @@
   }
 }
 
-.TitleNew {
+.titleNew {
   animation-name: mov;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
@@ -37,25 +37,15 @@
   }
 }
 
-.FormButtonDanger {
-  text-decoration: none;
-  background-color: $ComplementaryColor1;
-  color: red;
-  border: 3px solid red;
-  padding: 8px 16px;
-  transition: all 0.5s;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid red;
-
+.formButtonDanger {
   &:hover {
     background-color: red;
-    color: $ComplementaryColor1;
+    color: $complementaryColor1;
   }
 
   &:before {
     content: "";
-    background-color: $ComplementaryColor1;
+    background-color: $complementaryColor1;
     top: 0;
     left: 0;
     width: 100%;
@@ -70,24 +60,15 @@
   }
 }
 
-.FormButtonInfo {
-  text-decoration: none;
-  color: $MainColor;
-  background-color: $ComplementaryColor1;
-  border: 3px solid $MainColor;
-  padding: 8px 16px;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-
+.formButtonInfo {
   &:hover {
-    background-color: $MainColor;
-    color: $ComplementaryColor1;
+    background-color: $mainColor;
+    color: $complementaryColor1;
   }
 
   &:before {
     content: "";
-    background-color: $ComplementaryColor1;
+    background-color: $complementaryColor1;
     top: 0;
     left: 0;
     width: 100%;
@@ -99,5 +80,27 @@
 
   &:hover:before {
     transform: translatex(100%) rotate(45deg);
+  }
+}
+
+.carouselTextMov {
+  .titleNew {
+    animation-name: carouselTextMov;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    @keyframes mov {
+      0% {
+        transform: scale(0.5, 0.5);
+      }
+      70% {
+        transform: scale(1.2, 1.2);
+      }
+
+      100% {
+        transform: scale(1, 1);
+      }
+    }
   }
 }

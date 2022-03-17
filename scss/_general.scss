@@ -6,16 +6,16 @@
 }
 
 html {
-  font-family: $BasicFont;
+  font-family: $basicFont;
   line-height: 1.5;
   font-size: 18px;
 }
 
-.PrincipalTitle {
-  font-family: $DetailsFont;
+.principalTitle {
+  font-family: $detailsFont;
   margin-top: 120px;
   margin-bottom: 100px;
   font-size: $size;
-  color: $MainColor;
-  text-shadow: 3px 3px 4px $ComplementaryColor2;
+  color: $mainColor;
+  text-shadow: 3px 3px 4px $complementaryColor2;
 }

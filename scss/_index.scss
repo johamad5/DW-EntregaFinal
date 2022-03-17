@@ -1,4 +1,11 @@
-.CarouselText {
-  color: $ComplementaryColor3;
-  font-family: $DetailsFont;
+.carouselText {
+  color: $complementaryColor3;
+  font-family: $detailsFont;
+}
+
+h5 {
+  span {
+    color: $mainColor;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  }
 }

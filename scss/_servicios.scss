@@ -1,14 +1,15 @@
-.ServiciosBackground {
+.serviciosBackground {
   background-image: url(../img/BackgroundServicios.svg);
 
   .table {
     ul {
       list-style-type: none;
     }
+
     thead {
       th {
-        color: $ComplementaryColor1;
-        text-shadow: 3px 3px 4px $ComplementaryColor3;
+        color: $complementaryColor1;
+        text-shadow: 3px 3px 4px $complementaryColor3;
         font-size: 24px;
       }
     }

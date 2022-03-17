@@ -1,19 +1,19 @@
 footer {
   font-size: 14px;
-  font-family: $DetailsFont;
+  font-family: $mainFont;
 
-  .FooterBackground {
-    @include BackgroundGradient($ComplementaryColor2, $ComplementaryColor1);
+  .footerBackground {
+    @include BackgroundGradient($complementaryColor2, $complementaryColor1);
 
     .icon {
       font-size: 35px;
-      color: $MainColor;
+      color: $mainColor;
     }
 
-    .ShadowButton {
+    .shadowButton {
       & a:hover {
         font-size: 25px;
-        text-shadow: 3px 4px 4px $ComplementaryColor3;
+        text-shadow: 3px 4px 4px $complementaryColor3;
       }
     }
   }
