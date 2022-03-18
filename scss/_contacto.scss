@@ -7,7 +7,6 @@
   transition: all 0.5s;
   position: relative;
   overflow: hidden;
-  border: 1px solid red;
 }
 
 .formButtonInfo {
@@ -16,7 +15,7 @@
   background-color: $complementaryColor1;
   border: 3px solid $mainColor;
   padding: 8px 16px;
-  transition: all 0.3s;
+  transition: all 0.5s;
   position: relative;
   overflow: hidden;
 }

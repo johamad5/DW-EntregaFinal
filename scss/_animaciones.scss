@@ -22,8 +22,9 @@
   animation-name: mov;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 0s;
+
   @keyframes mov {
     0% {
       transform: scale(1, 1);
@@ -84,23 +85,43 @@
 }
 
 .carouselTextMov {
-  .titleNew {
-    animation-name: carouselTextMov;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    @keyframes mov {
-      0% {
-        transform: scale(0.5, 0.5);
-      }
-      70% {
-        transform: scale(1.2, 1.2);
-      }
+  animation-name: mov;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
 
-      100% {
-        transform: scale(1, 1);
-      }
+  @keyframes mov {
+    0% {
+      transform: scale(0.5, 0.5);
+    }
+    70% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.rolandoImg,
+.rolandoIntro,
+.publicEvent,
+.serviciosInfo,
+.serviciosTable {
+  animation-name: movUp;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  @keyframes movUp {
+    0% {
+      transform: translatey(80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translatexy(0px);
+      opacity: 1;
     }
   }
 }
