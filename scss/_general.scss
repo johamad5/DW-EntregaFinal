@@ -19,3 +19,17 @@ html {
   color: $mainColor;
   text-shadow: 3px 3px 4px $complementaryColor2;
 }
+
+.decoText {
+  color: $mainColor;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+// Style for credits
+.credits {
+  a {
+    font-family: "Satisfy", cursive;
+    text-decoration: none;
+    color: brown;
+  }
+}

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,17 @@ html {
   font-size: 48px;
   color: #69c5d7;
   text-shadow: 3px 3px 4px #c6c6c6;
+}
+
+.decoText {
+  color: #69c5d7;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.credits a {
+  font-family: "Satisfy", cursive;
+  text-decoration: none;
+  color: brown;
 }
 
 .principalTitle,
@@ -236,11 +248,6 @@ video {
 .carouselText {
   color: #000000;
   font-family: "Patrick Hand", cursive;
-}
-
-h5 span, .h5 span {
-  color: #69c5d7;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
 }
 
 footer {
